@@ -1,0 +1,124 @@
+.font {
+	font-family: 'Fredoka One', cursive;
+	font-size: 3rem;
+	padding: 0;
+	margin: 0;
+	-webkit-text-stroke: 1px black;
+	color: rgb(255, 255, 255);
+	text-shadow: 1.4px 1.4px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+	background-color: #f0f8dc;
+	margin: 0;
+}
+
+.title {
+	font-size: 5rem;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#colorDisplay {
+	font-size: 1.7rem;
+	padding-bottom: 2rem;
+	margin: 0;
+}
+
+.header {
+	margin: 0;
+	background-color: rgb(228, 116, 42);
+	color: black;
+	text-align: center;
+	border-bottom: solid 2px black;
+	width: auto;
+}
+
+.square {
+	cursor: pointer;
+	width: 30%;
+	background: blue;
+	padding-bottom: 30%;
+	margin: .6rem;
+	border: solid 2px black;
+	border-radius: 13%;
+	transition: all ease-in-out 0.3s;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-width: 55rem;
+	margin: 1rem auto;
+}
+
+h1 {
+	margin: 1rem auto;
+}
+
+.bar {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-bottom: 1rem;
+}
+
+a {
+	text-decoration: none;
+	-webkit-text-stroke: 1px black;
+	color: rgb(255, 255, 255);
+	text-shadow: 1.4px 1.4px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	color: white;
+	font-family: 'Fredoka One', cursive;
+	font-size: 3rem;
+}
+
+a:hover {
+	transition: ease-in .15s;
+	cursor: pointer;
+	color: rgb(181, 180, 192);
+}
+
+.navitem {
+	display: inline-block;
+	margin: auto;
+	letter-spacing: 1px;
+	width: 30%;
+}
+
+#reset:hover {
+	transition: ease-in .15s;
+	cursor: pointer;
+	color: rgb(181, 180, 192);
+}
+
+@media (max-width: 800px) {
+	.square {
+		width: 28%;
+	}
+	.bar {
+		margin: 0;
+	}
+	a,
+	title {
+		font-size: 1.3rem;
+	}
+	.one {
+		order: 2;
+		font-size: 3rem;
+	}
+	.two {
+		order: 3;
+		font-size: 2.6rem;
+	}
+	.one,
+	.two,
+	.three {
+		flex-direction: column;
+		flex-basis: 100%;
+		margin: 0;
+	}
+}
