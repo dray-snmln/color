@@ -1,2 +1,2 @@
 # Color Game
-Play <a href="https://dray-snmln.github.io/color/">Here</a>
+<a href="https://dray-snmln.github.io/color/">Play Color Game</a>
