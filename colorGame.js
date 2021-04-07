@@ -1,4 +1,3 @@
-// Colt Steele Project
 let colors = [],
     pickedColor,
     squares = document.querySelectorAll(".square"),
