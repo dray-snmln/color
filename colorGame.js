@@ -1,7 +1,7 @@
 let colors = [],
     pickedColor,
     squares = document.querySelectorAll(".square"),
-    colorDisplay = document.getElementById("colorDisplay"),
+    colorDisplay = document.querySelector("#colorDisplay"),
     messageDisplay = document.querySelector("#message"),
     header = document.querySelector(".header"),
     resetButton = document.querySelector("#reset"),
@@ -72,8 +72,8 @@ function generateRandomColors(num) {
 }
 
 function randomColor() {
-    var r = Math.floor(Math.random() * 256);
-    var g = Math.floor(Math.random() * 256);
-    var b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + ", " + g +  ", " + b + ")"
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`
 }
